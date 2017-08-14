@@ -1,0 +1,709 @@
+@import url('https://fonts.googleapis.com/css?family=Hammersmith+One|Playfair+Display:400,700,900|Roboto:100,300,400,900');
+
+$main-color: #00E0D0
+
+html,
+body
+	height: 100%
+	width: 100%
+	box-sizing: border-box
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+
+body
+	margin: 0
+	padding: 0
+	font-size: 14px
+	line-height: 22px
+	font-family: 'Roboto', sans-serif
+	font-weight: 300
+	color: #fff
+
+ul,
+ol
+	margin: 0
+	padding: 0
+	list-style-type: none
+
+a,
+a:hover
+	color: #fff
+	text-decoration: none
+
+img
+	max-width: 100%
+	height: auto
+	vertical-align: middle
+
+
+.container
+	margin-left: auto
+	margin-right: auto
+	padding-left: 15px
+	padding-right: 15px
+
+.main-header
+	min-height: 671px
+	background-size: cover
+	background-repeat: no-repeat
+	background-position: center bottom
+
+.top-line
+	padding-top: 20px
+	margin-bottom: 100px
+
+.logo
+	font-family: 'Roboto'
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: center
+	font-size: 30px
+	font-weight: 100
+	opacity: 0.85
+	a
+		color: $main-color
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		align-items: center
+	svg
+		padding-right: 12px
+		height: 50px
+		width: 44px
+		fill: $main-color
+
+.flex-direction-column
+	flex-direction: column
+
+.main-nav
+	overflow: hidden
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: flex-end
+	align-items: center
+	text-transform: uppercase
+	font-weight: 900
+	flex-wrap: wrap
+	font-size: 13px
+	a
+		margin-right: 25px
+		&:last-child
+			margin-right: 0
+		&:hover
+			color: $main-color
+			transition: all .25s
+
+.touch-menu
+	margin-top: -5px
+	font-size: 26px
+	display: none
+
+.home
+	.separator
+		margin-top: 20px
+		margin-bottom: 15px
+	.slick-dotted.slick-slider
+    	margin-bottom: 30px
+	.slick-dots
+		position: absolute
+		bottom: -8%
+		display: block
+		width: 100%
+		padding: 0
+		margin: 0
+		list-style: none
+		text-align: center
+		li
+			position: relative
+
+			display: inline-block
+
+			width: 20px
+			height: 20px
+			margin: 0 0
+			padding: 0
+
+			cursor: pointer
+			button
+				font-size: 0
+				line-height: 0
+				display: block
+				width: 20px
+				height: 20px
+				padding: 5px
+				cursor: pointer
+				color: transparent
+				border: 0
+				outline: none
+				background: transparent
+				&:hover,
+				&:focus
+					outline: none
+				&:before
+					font-family: 'slick'
+					font-size: 25px
+					line-height: 20px
+					position: absolute
+					top: 0
+					left: 0
+					width: 20px
+					height: 20px
+					content: '○'
+					text-align: center
+					color: white
+					-webkit-font-smoothing: antialiased
+					-moz-osx-font-smoothing: grayscale
+				&:hover:before,
+				&:focus:before
+					color: $main-color
+					content: '•'
+					font-size: 45px
+			
+		.slick-active button:before
+			color: $main-color
+			content: '•'
+			font-size: 45px
+
+.title
+	font-size: 32px
+	line-height: 1.2
+	font-family: 'Playfair Display', serif
+	margin-bottom: 0
+
+.separator
+	display: inline-block
+	width: 50px
+	border: 1px solid $main-color
+
+.home-description
+	line-height: 24px
+	&:first-of-type
+		margin-top: 0
+
+	&:last-of-type
+		margin-bottom: 60px
+
+.btn
+	text-transform: uppercase
+	color: $main-color
+	font-family: 'Hammersmith One', sans-serif
+	border: 1px solid $main-color
+	padding: 11px 32px
+	border-radius: 1px
+	font-weight: 400
+	display: inline-block
+	&:hover
+		color: #fff
+		background-color: $main-color
+		transition: all .45s
+
+.ex-padding
+	padding-top: 70px
+	padding-bottom: 70px
+
+
+.about
+	color: #413d4b
+	p
+		margin: 30px 0
+		opacity: .75
+
+.about-img
+	margin-bottom: 30px
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: center
+
+.h2
+	text-transform: uppercase
+	font-family: 'Playfair Display', serif
+	font-weight: 700
+	font-size: 22px
+	line-height: 1.2
+	margin-top: 0
+	color: #413d4b
+	-webkit-margin-before: 0
+	-webkit-margin-after: 0
+
+.video-section
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-direction: column
+	justify-content: center
+	min-height: 550px
+	background-size: cover
+	background-repeat: no-repeat
+	background-position: top center
+
+.video-button
+	display: inline-block
+	svg
+		width: 100px
+		height: 100px
+		fill: #fff
+		&:hover
+			fill: $main-color
+			transition: all .45s
+
+.video-button-description
+	display: block
+	margin-top: 30px
+	font-size: 16px
+	font-weight: 900
+	text-transform: uppercase
+
+.expertise
+	color: #333333
+	.separator
+		border-color: #413d4b
+		opacity: .3
+	i
+		font-size: 3rem
+		color: $main-color
+	.under-header-text
+		color: #2f2d35
+
+.expertise-item-wrap
+	margin-top: 80px
+
+.under-header-text
+	color: #fff
+	line-height: 1.2
+	font-family: 'Playfair Display', serif
+	font-weight: 400
+	letter-spacing: 1px
+
+
+.divider
+	width: 100%
+	height: 1px
+	background: #EBEBEB
+	overflow: hidden
+	margin: 20px 0px
+	display: inline-block
+
+.h4
+	line-height: 1.2
+	text-transform: uppercase
+	color: #413d4b
+
+.teams
+	background-size: cover
+	background-repeat: no-repeat
+	background-position: center
+	.h2
+		color: #fff
+	.separator
+		border-color: #fff
+		opacity: .2	
+	.btn
+		margin-top: 25px
+
+.teams-item
+	margin-left: 10px
+	margin-right: 10px
+	margin-top: 45px
+	border: 1px solid #7B7790
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-direction: column
+	align-items: center
+	text-align: center
+	img
+		display: inline-block
+		width: 100%
+		border-bottom: 1px solid #7B7790
+	.h4
+		color: #fff
+		margin: 0
+
+.teams-items-wrap
+	margin-bottom: 65px
+
+.teams-description
+	width: 100%
+	padding-top: 20px
+	padding-bottom: 20px
+
+.teams-workers
+	text-transform: uppercase
+	display: inline-block
+	margin-top: 5px
+	color: #fafafa
+	opacity: .7
+
+.join-call-text
+	br
+		display: none
+
+.works
+	.works-item
+		position: relative
+		padding-left: 0
+		padding-right: 0
+		img
+			display: inline-block
+			width: 100%
+			height: 100%
+			
+	.row
+		margin-left: 0
+		margin-right: 0
+
+.dribbble-button
+	br
+		display: none
+
+.works-item-wrapper
+	margin-top: 50px
+	margin-bottom: 70px
+
+.jump-button
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: flex-end
+	a
+		display: block
+		color: #413d4b
+		font-size: 14px
+		line-height: 1.2
+		.fa-angle-right
+			margin-left: 5px
+			font-size: 18px
+		&:hover
+			color: #000
+			transition: .35s
+
+.works-item-cont
+	width: 100%
+	height: 100%
+	position: absolute
+	top: 0
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: center
+	background-color: rgba(0, 0, 0, 0)
+	cursor: pointer
+	&:hover
+		background-color: rgba(0, 0, 0, 0.75)
+		transition: all .25s
+		.works-item-cont-text
+			opacity: 1
+			transition: all .25s
+.works-item-cont-text
+	opacity: 0
+	font-size: 18px
+	font-weight: 600
+	color: #fff
+	letter-spacing: 2px
+	i
+		display: block
+		color: $main-color
+		font-size: 23px
+		margin: 10px auto 0 auto
+		display: block
+
+.testimonials
+	background-size: cover
+	background-repeat: no-repeat
+	background-position: center
+
+	// Стрелки перехода
+	.slick-prev,
+	.slick-next
+		top: 25%
+		display: inline-block !important
+		z-index: 50
+		width: 25px
+		height: 87px
+		&:before
+			color: #9F9F9F
+			font-size: 75px
+
+	.slick-prev
+		left: -2.5%
+	.slick-next
+		right: -2.5%
+	.slick-slide
+		height: none
+		min-height: 78px
+	// Доты
+	.slick-dots
+		position: absolute
+		bottom: -50px
+		display: block
+		width: 100%
+		padding: 0
+		margin: 0
+		list-style: none
+		text-align: center
+		li
+			position: relative
+
+			display: inline-block
+
+			width: 20px
+			height: 20px
+			margin: 0 0
+			padding: 0
+
+			cursor: pointer
+			button
+				font-size: 0
+				line-height: 0
+				display: block
+				width: 20px
+				height: 20px
+				padding: 5px
+				cursor: pointer
+				color: transparent
+				border: 0
+				outline: none
+				background: transparent
+				&:hover,
+				&:focus
+					outline: none
+				&:before
+					font-family: 'slick'
+					font-size: 25px
+					line-height: 20px
+					position: absolute
+					top: 0
+					left: 0
+					width: 20px
+					height: 20px
+					content: '○'
+					text-align: center
+					color: white
+					-webkit-font-smoothing: antialiased
+					-moz-osx-font-smoothing: grayscale
+				&:hover:before,
+				&:focus:before
+					color: $main-color
+					content: '•'
+					font-size: 45px
+			
+		.slick-active button:before
+			color: $main-color
+			content: '•'
+			font-size: 45px
+
+
+.testimonials-font
+	font-family: 'Playfair Display', serif
+	font-size: 16px
+	line-height: 26px
+	margin-bottom: 40px
+
+.seized-quotes
+	display: inline-block
+	margin-top: 35px
+	font-size: 100px
+	opacity: .9
+
+.testimonial-author-name
+	margin-top: 40px
+	font-family: 'Roboto', sans-serif
+	font-weight: 900
+	text-transform: uppercase
+
+.testimonial-author-profession
+	font-weight: 300
+	font-size: 13px
+	opacity: .7
+	display: block
+
+
+
+.contact-form
+	margin-top: 30px
+
+.contact-input
+	color: #413d4b
+	outline: none
+	box-sizing: border-box
+	display: block
+	min-width: 100%
+	padding: 13px 20px
+	margin-bottom: 22px
+	border: 1px solid #E5E5E5
+	&:focus
+		box-shadow: 0px 0px 1px 1px $main-color
+		border: 1px solid $main-color
+	&::-webkit-input-placeholder
+		opacity: .5
+	&:-moz-placeholder
+		opacity: .5
+	&:-ms-input-placeholder
+		opacity: .5
+	&:-moz-placeholder
+		opacity: .5
+
+.contact-area
+	height: 200px
+	resize: none
+
+.contact-clients-img
+	display: block
+	margin-top: 45px
+	&:nth-child(5n + 1)
+		margin-top: 30px
+
+.main-footer
+	background-size: cover
+	background-repeat: no-repeat
+	background-position: center
+
+.footer-text
+	line-height: 26px
+	
+
+.left-footer-menu
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: space-between
+	align-items: center
+	font-weight: 400
+	margin-top: 97px
+	flex-wrap: wrap
+
+.left-footer-menu-link
+	text-transform: uppercase
+	letter-spacing: 1px
+	&:hover
+		border-bottom: 1px solid #fff
+
+.h5
+	font-size: 15px
+	line-height: 26px
+	color: #fff
+	font-weight: 900
+	text-transform: uppercase
+
+.footer-text-link
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	align-items: flex-start
+	width: 100%
+	.fa
+		display: block
+		float: left
+		width: 7%
+		margin-right: 1%
+		padding-top: 5px
+	span
+		width: 92%
+		float: right
+	&:hover
+		transition: all .35s
+		opacity: .6
+
+.center-footer-item,
+.right-footer-item
+	margin-top: -10px
+	input[type="text"]
+		opacity: .75
+
+.right-footer-item-form
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	align-items: center
+
+.right-footer-item-input
+	padding: 15px 20px
+	background: transparent
+	outline: none
+	color: #fff
+	border: 1px solid rgba(255, 255, 255, .7)
+	margin-right: 10px
+	&::-webkit-input-placeholder
+		opacity: .75
+		color: #fff
+	&:-moz-placeholder
+		opacity: .75
+		color: #fff
+	&:-ms-input-placeholder
+		opacity: .75
+		color: #fff
+	&:-moz-placeholder
+		opacity: .75
+		color: #fff
+
+.submit-btn
+	background-color: #fff
+	opacity: .5
+	width: 70px
+	height: 48px
+	outline: none
+	border: none
+	cursor: pointer
+	&:hover, 
+	&:focus
+		opacity: 1
+		transition: .25s
+	&:before
+		content: "\f1d9"
+		font-family: 'Fontawesome'
+		text-align: center
+		font-size: 1rem
+
+.social-list
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	align-items: center
+	margin-top: 27px
+	li
+		margin-right: 8px
+		&:last-child
+			margin-right: 0
+		svg
+			fill: #fff
+		&:hover svg
+			transition: all .5s
+			fill: $main-color
+
+.copyright
+	margin-top: 55px
+
+.copyright-text
+	line-height: 26px
+	font-weight: 400
+
+.footer-logo
+	justify-content: flex-start

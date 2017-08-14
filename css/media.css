@@ -1,0 +1,42 @@
+@media (max-width: 480px) {
+  .join-call-text br {
+    display: block; }
+  .dribbble-button br {
+    display: block; }
+  .works .h2 {
+    font-size: 18px; }
+  .testimonials .slick-prev {
+    left: -4%; }
+  .testimonials .slick-next {
+    right: -4%; } }
+
+@media (max-width: 768px) {
+  .ex-padding {
+    padding-top: 50px;
+    padding-bottom: 50px; }
+  .main-nav {
+    margin-top: 20px;
+    justify-content: center; }
+  .top-line {
+    margin-bottom: 0; }
+  .home-description br {
+    display: none; }
+  .teams-item {
+    margin-top: 60px; }
+  .contact .btn {
+    margin-bottom: 40px; }
+  .left-footer-menu {
+    margin-top: 20px; }
+  .center-footer-item {
+    margin-top: 50px; }
+  .right-footer-item {
+    margin-top: 50px; }
+  .footer-logo {
+    justify-content: center; }
+  .main-footer .h5 {
+    text-align: center; } }
+
+@media (max-width: 1024px) {
+  .teams-item {
+    margin-left: 20px;
+    margin-right: 20px; } }
