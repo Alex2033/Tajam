@@ -10,7 +10,15 @@
   .testimonials .slick-next {
     right: -4%; } }
 
-@media (max-width: 768px) {
+@media (min-width: 500px) and (max-width: 767px) {
+  .footer-text-link {
+    justify-content: center; }
+    .footer-text-link .fa {
+      width: 3%; }
+    .footer-text-link span {
+      width: 45%; } }
+
+@media (max-width: 767px) {
   .ex-padding {
     padding-top: 50px;
     padding-bottom: 50px; }
@@ -33,6 +41,8 @@
     margin-top: 50px; }
   .footer-logo {
     justify-content: center; }
+  .left-footer-menu {
+    flex-direction: row; }
   .main-footer .h5 {
     text-align: center; } }
 
@@ -40,3 +50,7 @@
   .teams-item {
     margin-left: 20px;
     margin-right: 20px; } }
+
+@media (min-width: 992px) {
+  .left-footer-menu {
+    flex-direction: row; } }
